@@ -1,0 +1,15 @@
+
+
+#!name= huiben
+#!desc= 解锁VIP
+
+[Script]
+laiyin = type=http-response, pattern= ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path= https://raw.githubusercontent.com/377972932/jiaoben/main/youshengyingyuhuiben.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
+
+
+
+
+
