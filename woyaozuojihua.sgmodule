@@ -1,0 +1,14 @@
+
+#!name= woyaozuojihua
+#!desc= 解锁VIP
+
+[Script]
+laiyin = type=http-response, pattern= ^http[s]?:\/\/plan.gangduotech.com\/(api/v1/dressup/order.html|api/.+/member/view.html), script-path= https://raw.githubusercontent.com/377972932/jiaoben/main/woyaozuojihua.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% plan.gangduotech.com
+
+
+
+
+
