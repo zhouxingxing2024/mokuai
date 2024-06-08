@@ -1,0 +1,15 @@
+
+
+#!name= shaoniandedao
+#!desc= 解锁VIP
+
+[Script]
+laiyin = type=http-response, pattern= ^http[s]?:\/\/(igetcool-gateway.igetcool.com|igetcool-share.igetcool.com), script-path= https://raw.githubusercontent.com/377972932/jiaoben/main/shaoniandedao.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% igetcool-gateway.igetcool.com,igetcool-share.igetcool.com
+
+
+
+
+
