@@ -1,0 +1,13 @@
+#!name= shaguayingyu
+#!desc= 解锁VIP
+
+[Script]
+shaguayingyu = type=http-response, pattern= ^http[s]?:\/\/sgyy.easyenglish888.com, script-path= https://raw.githubusercontent.com/377972932/jiaoben/main/shaguayingyu.js, requires-body=true, max-size=-1, timeout=60
+shaguayingyu2 = type=http-request, pattern= ^https:\/\/sgyy.easyenglish888.com/course/.+/.+/.+/.+/appstore, script-path= https://raw.githubusercontent.com/377972932/jiaoben/main/shaguayingyu2.js, requires-headers=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% sgyy.easyenglish888.com
+
+
+
+
