@@ -1,0 +1,9 @@
+
+#!name= 昭昭医考
+#!desc= 解锁内容
+
+[Script]
+hundun = type=http-response, pattern= ^http[s]?:\/\/api.yikao88.com\/(api-shop/course/app/.+/selectDetail|api-tiku/chapter/app/v5/listByNavigation|api-shop/product/app/v5/info/*|api-shop/learningPackage/app/v5/list|api-shop/product/app/v5/selectAppProductById), script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/zzyk.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.yikao88.com
