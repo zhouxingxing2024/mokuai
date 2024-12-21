@@ -1,0 +1,9 @@
+
+#!name= zyzx
+#!desc= 解锁内容
+
+[Script]
+hundun = type=http-response, pattern= ^http[s]?:\/\/mmm.tcmmooc.com/(mapi_v3/Search/searchCoursesNew|mapi_v3/Course/getCourseRelative|mapi_v3/Course/getCourseExtend), script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/zyzx.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% mmm.tcmmooc.com
