@@ -1,9 +1,0 @@
-
-#!name= EWA
-#!desc= 解锁内容
-
-[Script]
-hundun = type=http-response, pattern= ^http[s]?:\/\/api.appewa.com, script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/ewa.js, requires-body=true, max-size=-1, timeout=60
-
-[MITM]
-hostname = %APPEND% api.appewa.com
