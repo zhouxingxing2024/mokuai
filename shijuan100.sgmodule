@@ -1,0 +1,9 @@
+
+#!name= shijuan100
+#!desc= 解锁VIP
+
+[Script]
+hundun = type=http-response, pattern= ^https:\/\/paper.zjapp.xyz/api/v1/status/list, script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/shijuan100.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% paper.zjapp.xyz
