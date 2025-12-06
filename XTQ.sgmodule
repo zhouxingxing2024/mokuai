@@ -1,0 +1,9 @@
+
+#!name= XTQ
+#!desc= 解锁VIP
+
+[Script]
+hundun = type=http-response, pattern= ^http[s]?:\/\/tonestro-api.azurewebsites.net/seppapp/v3.9/Users/userpremiuminfo, script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/XTQ.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% tonestro-api.azurewebsites.net
