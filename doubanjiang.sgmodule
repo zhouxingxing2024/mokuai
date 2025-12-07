@@ -1,0 +1,9 @@
+
+#!name= DBJ
+#!desc= 解锁内容
+
+[Script]
+hundun = type=http-response, pattern= ^https:\/\/mapi.doubanjiang.com, script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/doubanjiang.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% mapi.doubanjiang.com
