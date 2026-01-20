@@ -1,0 +1,9 @@
+
+#!name= aitz
+#!desc= 解锁VIP
+
+[Script]
+hundun = type=http-response, pattern= ^http[s]?:\/\/www.aitanzou.com/analysis/user_v3/app/get_user_info, script-path= https://raw.githubusercontent.com/zhouxingxing2024/jiaoben/refs/heads/main/aitz.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% www.aitanzou.com
